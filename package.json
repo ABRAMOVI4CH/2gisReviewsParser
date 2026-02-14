@@ -26,6 +26,10 @@
     "clean": "rm -rf dist",
     "prepublishOnly": "npm run build"
   },
+    "repository": {
+    "type": "git",
+    "url": "https://github.com/ABRAMOVI4CH/2gisReviewsParser"
+  },
   "devDependencies": {
     "@types/node": "^22.0.0",
     "typescript": "^5.5.0"
