@@ -1,6 +1,6 @@
 {
   "name": "2gis-reviews-parser",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "2GIS reviews parser (TypeScript, REST API)",
   "license": "MIT",
   "main": "dist/cjs/index.cjs",
@@ -26,7 +26,7 @@
     "clean": "rm -rf dist",
     "prepublishOnly": "npm run build"
   },
-    "repository": {
+  "repository": {
     "type": "git",
     "url": "https://github.com/ABRAMOVI4CH/2gisReviewsParser"
   },
