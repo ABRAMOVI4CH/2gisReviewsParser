@@ -1,0 +1,1 @@
+export { TwoGisParser } from './utils';
