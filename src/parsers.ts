@@ -56,7 +56,7 @@ export class Parser {
       offset: String(offset),
       is_advertiser: 'false',
       fields:
-        'meta.providers,meta.branch_rating,meta.branch_reviews_count,meta.total_count,reviews.id,reviews.hiding_reason,reviews.emojis,reviews.trust_factors',
+        'meta.providers,meta.branch_rating,meta.branch_reviews_count,meta.total_count,reviews.hiding_reason,reviews.emojis,reviews.trust_factors',
       without_my_first_review: 'false',
       rated: 'true',
       sort_by: 'friends',

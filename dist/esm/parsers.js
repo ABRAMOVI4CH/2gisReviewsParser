@@ -10,7 +10,7 @@ export class Parser {
             limit: String(this.options.limit),
             offset: String(offset),
             is_advertiser: 'false',
-            fields: 'meta.providers,meta.branch_rating,meta.branch_reviews_count,meta.total_count,reviews.id,reviews.hiding_reason,reviews.emojis,reviews.trust_factors',
+            fields: 'meta.providers,meta.branch_rating,meta.branch_reviews_count,meta.total_count,reviews.hiding_reason,reviews.emojis,reviews.trust_factors',
             without_my_first_review: 'false',
             rated: 'true',
             sort_by: 'friends',
@@ -42,7 +42,9 @@ export class Parser {
             answer = review.official_answer.text;
         }
         const reviewId = review.id != null ? String(review.id) : null;
-        const reviewLink = reviewId ? `https://2gis.ru/reviews/${this.branchId}/review/${reviewId}` : null;
+        const link = reviewId != null
+            ? `https://2gis.ru/reviews/${this.branchId}/review/${reviewId}`
+            : null;
         return createReview({
             name: name || null,
             iconHref: iconHref || null,
@@ -50,7 +52,7 @@ export class Parser {
             text: review.text ?? null,
             stars: review.rating ?? 0,
             answer,
-            reviewLink,
+            link,
         });
     }
     mapInfo(meta) {
