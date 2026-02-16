@@ -5,6 +5,7 @@ export const createReview = (data) => ({
     text: data.text,
     stars: data.stars,
     answer: data.answer,
+    review_link: data.reviewLink,
 });
 export const createInfo = (data) => ({
     name: data.name,

@@ -8,6 +8,7 @@ const createReview = (data) => ({
     text: data.text,
     stars: data.stars,
     answer: data.answer,
+    review_link: data.reviewLink,
 });
 exports.createReview = createReview;
 const createInfo = (data) => ({

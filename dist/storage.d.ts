@@ -5,6 +5,7 @@ export type Review = {
     text: string | null;
     stars: number;
     answer: string | null;
+    review_link: string | null;
 };
 export type Info = {
     name: string | null;
@@ -19,6 +20,7 @@ export declare const createReview: (data: {
     text: string | null;
     stars: number;
     answer: string | null;
+    reviewLink: string | null;
 }) => Review;
 export declare const createInfo: (data: {
     name: string | null;
